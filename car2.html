@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 10%;
+        }
+        input[type=text]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  
+}
+input[type=number]{
+  width: 50%;
+  padding: 12px 30px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box
+}
+.submit{
+  width: 30%;
+  background-color: #383a38;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+.btn{
+    width: 30%;
+  background-color: #383a38;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.submit{
+  background-color: #585757;
+}
+.custom-select,select{
+  color: white;
+            width: 100%;
+            padding: 10px 15px;
+            border: 1px rgb(205, 205, 222);
+            border-radius: 4px;
+            background-color: rgb(85, 82, 82);
+         
+}
+
+    </style>
+    <script>
+        function submit(){
+            var a =document.getElementById('hmveh').value;
+            var b=document.getElementById('days').value;
+            
+             var c = (+a)+(+b);
+             var res= c*2000;
+          document.getElementById('result').value=res;
+        }
+    </script>
+</head>
+<body>
+    <center>
+    <input type="number" id="hmveh" placeholder="how many vehicle"><br>
+    <input type="number" id="days" placeholder="days"><br>
+    
+    <button type="button" class="submit" onclick="submit()">Submit</button><br>
+
+    <input type="number" id="result" placeholder="price">
+    <form action="TANKYOU.html" method="get" target="_blank">
+        <button class="btn" 
+        >BOOK</button>
+</center>
+</center>
+</body>
+</html>

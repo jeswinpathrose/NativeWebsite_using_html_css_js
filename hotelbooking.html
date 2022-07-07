@@ -1,0 +1,315 @@
+<html>
+  <head>
+      <style>
+    section.blogs .container .row .blog {
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding-bottom: 30px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+section.blogs .container .row .blog  {
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+section.blogs .container .row .blog:hover {
+  box-shadow: 0 0 20px #bbb;
+}
+
+section.blogs .container .row .blog:hover button {
+  background-color: darkorange;
+}
+ 
+section.blogs .container .row .blog img {
+  display: block;
+  margin-bottom: 40px;
+  width: 100%;
+  
+}
+
+section.blogs .container .row .blog span {
+  color: #4f4f4f;
+  margin-right: 10px;
+}
+
+section.blogs .container .row .blog p {
+  padding: 0 20px;
+  color: #4f4f4f;
+}
+.btn {
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 30px;
+  background-color: rgb(15, 14, 14);
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.btn:hover {
+  background-color: rgb(234, 173, 117);
+}
+.navbar {
+   overflow: hidden;
+   background-color: #333;
+ }
+ 
+ .navbar a {
+   float: left;
+   font-size: 16px;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+ }
+ 
+ .dropdown {
+   float: left;
+   overflow: hidden;
+ }
+ 
+ .dropdown .dropbtn {
+   font-size: 16px;  
+   border: none;
+   outline: none;
+   color: white;
+   padding: 14px 16px;
+   background-color: inherit;
+   font-family: inherit;
+   margin: 0;
+ }
+ 
+ .navbar a:hover, .dropdown:hover .dropbtn {
+   background-color: red;
+ }
+ 
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+ }
+ 
+ .dropdown-content a {
+   float: none;
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+ }
+ 
+ .dropdown-content a:hover {
+   background-color: #ddd;
+ }
+ 
+ .dropdown:hover .dropdown-content {
+   display: block;
+ }
+ body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background-image: url(/IMAGE2/ht1.jpg);
+  color: white;
+  font-size: 30px;
+}
+.navbar.active{
+  background-color:violet;
+}
+.calc{
+  width: 40%;
+}
+input[type=text]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  
+}
+input[type=number]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box
+}
+.submit{
+  width: 30%;
+  background-color: #383a38;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.submit{
+  background-color: #585757;
+}
+.custom-select,select{
+  color: white;
+            width: 100%;
+            padding: 10px 15px;
+            border: 1px rgb(205, 205, 222);
+            border-radius: 4px;
+            background-color: rgb(85, 82, 82);
+         
+}
+
+
+</style>
+<script>
+ function result(){
+
+ var n1 =document.getElementById('adltnum').value;
+ var n2 =document.getElementById('rmnum').value;
+ var res =document.getElementById('operator').value;
+
+       
+  
+if(res==='1'){
+  var n2 =document.getElementById('result').value=n1*1000
+}
+if(res==='2'){
+  var n2 =document.getElementById('result').value=n1*2000
+}if(res==='3'){
+  var n2 =document.getElementById('result').value=n1*3000
+}
+           
+            }
+ 
+
+</script>
+  </head>
+  <body>
+
+<div class="navbar">
+  <a href="#home" id="active">HOTELS</a>
+  
+ 
+  
+  <div class="dropdown">
+   
+    <button class="dropbtn">VEHICLES 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="VEHICLES.html">CAR</a>
+      <a href="vehicle2.html">BIKE</a>
+    </div>
+  </div> 
+</div>
+<div>
+  <div>
+   
+    
+</div>
+  </div>
+</div>
+
+<section class="blogs">
+    <div class="container">
+      <div class="section-header">
+        <h2 style="text-align: center;"><u>
+            
+        </u></h2>
+      </div><br/>
+      <div class="row">
+        <div class="blog">
+          <img src="IMAGE2/pexels-boonkong-boonpeng-1134176.jpg" alt="Blog 1"/>
+         
+          <h3>VIGA VISTA</h3>
+          <p>
+          PRICE:3000/DAY<br>
+          INCLUDE:BREAKFAST,MEAL,DINNER(SPECIAL ITEMS GET SPECIAL CHARGES)
+          </p>
+          <form action="hotel1.html" method="get" target="_blank">
+            <button class="btn" 
+            >BOOK</button>
+        </div>
+        <div class="blog">
+          <img src="IMAGE2/pexels-pixabay-258154.jpg" alt="Blog 2" />
+         
+          
+          <h3>LUCIO CASIO</h3>  
+          <p>price:2000/per day<br>
+            included:BREAK FAST,MEAL,DINNER(SPECIAL ITEMS GET SPECIAL CHARGES)
+            
+            
+
+           
+          </p>
+         
+          
+          <form action="hotel2.html" method="get" target="_blank">
+            <button class="btn" 
+            >BOOK</button>
+         </form>
+        </div>
+        <div class="blog">
+          <img src="/IMAGE2/ht1.jpg" alt="Blog 3" />
+        
+          
+          <h3>ADEVENTURE RIAL</h3>
+          <p>
+            PRICE:1000/DAY<br>
+           INCLUDED:BREAK FAST,MEAL,DINNER
+          </p>
+          <form action="hotel3.html" method="get" target="_blank">
+            <button class="btn" 
+            >BOOK</button>
+         </form>
+        </div>
+        <div class="blog">
+            <img src="/IMAGE2/ht2.jpg" alt="Blog 3" />
+          
+            
+            <h3>GREEN HOUSE</h3>
+            <p>
+              price:350/DAY<br>
+              INCLUDE:INCLUDED:BREAK FAST,MEAL,DINNER
+            </p>
+            <form action="hotel4.html" method="get" target="_blank">
+              <button class="btn" 
+              >BOOK</button>
+           </form>
+           
+        </div>
+        <div class="blog">
+          <img src="IMAGE2/pexels-boonkong-boonpeng-1134176.jpg" alt="Blog 3" />
+        
+          
+          <h3>GREEN HOUSE</h3>
+          <p>price:500/day
+            INCLUDE:INCLUDED:BREAK FAST,MEAL,DINNER
+          </p>
+          <form action="hotel5.html" method="get" target="_blank">
+            <button class="btn" 
+            >BOOK</button>
+         </form>
+      </div>
+    </div>
+
+  </section>
+  </body>
+  </html>
